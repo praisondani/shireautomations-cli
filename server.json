@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.praisondani/shireautomations-cli",
+  "title": "Shire Automations",
+  "description": "Read Shire Automations services and published prices, and run stateless workflow planning tools through a local MCP server.",
+  "websiteUrl": "https://shireautomations.com/developers",
+  "repository": {
+    "url": "https://github.com/praisondani/shireautomations-cli",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "shireautomations",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": { "type": "stdio" },
+      "packageArguments": [{ "type": "positional", "value": "mcp" }]
+    }
+  ]
+}
