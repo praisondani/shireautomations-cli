@@ -1,0 +1,58 @@
+{
+  "manifest_version": "0.3",
+  "name": "shire-automations",
+  "display_name": "Shire Automations",
+  "version": "0.1.1",
+  "description": "Explore Shire Automations services and run stateless workflow planning tools from an MCP-compatible assistant.",
+  "long_description": "Connect an MCP-compatible assistant to Shire Automations. Read the public services and pricing catalog, list planning tools, and run workflow planning calculations. Tool inputs are sent to Shire Automations' public API for processing and are not stored. The tools do not submit intake forms, create quotes, or start paid work. Do not send credentials or sensitive customer, patient, or financial-account data.",
+  "author": {
+    "name": "Shire Automations",
+    "url": "https://shireautomations.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praisondani/shireautomations-cli.git"
+  },
+  "homepage": "https://shireautomations.com/developers",
+  "documentation": "https://shireautomations.com/developers",
+  "support": "https://github.com/praisondani/shireautomations-cli/issues",
+  "privacy_policies": [
+    "https://doorkeeperlabs.com/privacy-policy"
+  ],
+  "keywords": [
+    "shire automations",
+    "business automation",
+    "workflow automation",
+    "AI-native business",
+    "MCP server",
+    "workflow planning",
+    "business process automation"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "src/mcp.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/src/mcp.js"]
+    }
+  },
+  "tools": [
+    {
+      "name": "shire_catalog",
+      "description": "Read Shire Automations services, starting prices, and public planning tools."
+    },
+    {
+      "name": "shire_list_planning_tools",
+      "description": "List workflow planning calculators published by Shire Automations."
+    },
+    {
+      "name": "shire_plan",
+      "description": "Run a stateless Shire workflow planning calculator using provided values."
+    }
+  ],
+  "compatibility": {
+    "runtimes": {
+      "node": ">=20"
+    }
+  }
+}

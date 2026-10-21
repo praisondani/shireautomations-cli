@@ -45,9 +45,13 @@ Planning commands accept JSON and print JSON. The workflow mapper returns an edi
 
 Set `SHIRE_API_URL` to an alternate API origin for development. The default is `https://shireautomations.com`.
 
+## MCP client install
+
+For an MCPB-compatible client, download [the Shire Automations MCP bundle](https://github.com/praisondani/shireautomations-cli/releases/latest/download/shire-automations.mcpb) and import it. The bundle runs the MCP server locally and calls Shire Automations' public API. It does not request credentials, store planning requests, submit intake forms, or start paid work.
+
 ## MCP server
 
-The package also runs a local stdio MCP server:
+The CLI package also runs a local stdio MCP server:
 
 ```sh
 shire mcp

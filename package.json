@@ -1,6 +1,6 @@
 {
   "name": "shireautomations",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI and MCP server for Shire Automations workflow planning tools.",
   "type": "module",
   "engines": { "node": ">=20" },
@@ -8,7 +8,7 @@
     "shire": "./bin/shire.js"
   },
   "files": ["bin", "src", "README.md", "server.json"],
-  "keywords": ["shire-automations", "workflow-automation", "business-planning", "mcp", "cli"],
+  "keywords": ["shire-automations", "workflow-automation", "business-planning", "mcp", "mcp-server", "mcpb", "cli"],
   "homepage": "https://shireautomations.com/developers",
   "repository": {
     "type": "git",
